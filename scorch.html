@@ -62,7 +62,7 @@ td {
                 <table border="0" cellspacing="0" cellpadding="4">
                     <tr>
                         <td>
-                            <h2 id="title">An Awful Tempest by Jeffrey Cobb</h2>
+                            <h2 id="title" style="font-family:verdana;">An Awful Tempest by Jeffrey Cobb</h2>
                         </td>
                     </tr>
                 </table>
@@ -108,8 +108,6 @@ function getURIParameter(param, asArray) {
 
 var title = getURIParameter("title");
 var src = getURIParameter("file");
-console.log(src);
-title.replace("+", " ");
 document.getElementById("title").innerHTML = title + " by Jeffrey Cobb";
 document.getElementById("player").src = src;
 </script>
